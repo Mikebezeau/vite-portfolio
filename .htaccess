@@ -1,0 +1,14 @@
+
+RewriteOptions inherit
+Options +Indexes
+IndexOptions -FancyIndexing
+
+#for app in subdirectory
+RewriteEngine on
+RewriteBase /portfolio/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^.*portfolio/.* /portfolio/index.html [L]
+
