@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useBlocker, useParams } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import {
@@ -19,12 +19,28 @@ const ProjectDetails = () => {
     ...professionalProjects,
   ].find((project) => project.id === projectId);
 
+  // Block navigating elsewhere when a lightbox is open
+  const blocker = useBlocker(
+    ({ currentLocation, nextLocation }) =>
+      open && currentLocation.pathname !== nextLocation.pathname
+  );
+
+  //close lightbox anytime blocker is triggered
+  useEffect(() => {
+    setOpen(false);
+  }, [blocker]);
+
   return (
-    <div className="pt-8 text-center flex flex-col items-center w-full">
+    <div className="pt-16 text-center flex flex-col items-center w-full">
       {project !== undefined && (
         <>
           <h2 className="text-[40px] font-bold">{project.title}</h2>
-          <h2 className="my-10 text-gray-700 text-lg">{project.description}</h2>
+          {project.assoc !== "" && (
+            <h3 className="text-gray-500 text-lg">
+              Assocciated with: {project.assoc}
+            </h3>
+          )}
+          <h3 className="my-10 text-gray-700 text-lg">{project.description}</h3>
           {/*<BiSolidQuoteAltRight className="bg-blue-500 p-3 text-[44px] rounded-full text-white" />
           <div className="h-[60px] border-r-[1px]" />
           <div className="w-[5px] h-[5px] bg-blue-600 rounded-full"></div>*/}

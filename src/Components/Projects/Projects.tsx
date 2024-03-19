@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useBlocker } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Strings from "../../Content/Strings";
@@ -18,6 +18,7 @@ export interface projectProps {
     src: string;
   }[];
   title: string;
+  assoc: string;
   description: string;
   details: {
     heading: string;
@@ -40,12 +41,6 @@ const Projects = () => {
     },
   ]);
 
-  //used to generate open/close list for lightbox gallery
-  const lightboxOpenProjectList = [
-    ...personalProjects,
-    ...professionalProjects,
-  ];
-
   //function to set open property to display/hide lightbox galleries
   const toggleOpen = (projectId: string) => {
     const itemElement: itemProps | undefined = openList.find(
@@ -60,14 +55,27 @@ const Projects = () => {
     }
   };
 
+  // Block navigating elsewhere when a lightbox is open
+  const blocker = useBlocker(
+    ({ currentLocation, nextLocation }) =>
+      openList.find((item: itemProps) => item.open === true) !== undefined &&
+      currentLocation.pathname !== nextLocation.pathname
+  );
+
   //generate project lightbox open list
+  //regenerate lightbox in closed state anytime blocker is triggered
   useEffect(() => {
+    //full list of all projects
+    const lightboxOpenProjectList = [
+      ...personalProjects,
+      ...professionalProjects,
+    ];
     const list: itemProps[] = [];
     lightboxOpenProjectList.forEach((project) => {
       list.push({ id: project.id, open: false });
     });
     setOpenList([...list]);
-  }, []);
+  }, [blocker]);
 
   //display a list of projects with heading
   interface ProjectListDisplayProps {
@@ -129,7 +137,7 @@ const Projects = () => {
   );
 
   return (
-    <div className="pt-8 text-center flex flex-col items-center w-full">
+    <div className="pt-16 text-center flex flex-col items-center w-full">
       <h2 className="text-[40px] font-bold uppercase">PROJECTS</h2>
       <BiSolidQuoteAltLeft
         className="bg-blue-500 p-3 text-[44px] rounded-full

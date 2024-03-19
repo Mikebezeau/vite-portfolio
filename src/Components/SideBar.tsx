@@ -6,11 +6,11 @@ function SideBar() {
   let title = "";
   const firstPath = location.pathname.split("/")[1];
   if (firstPath === "") title = "HOMEPAGE";
-  else if (firstPath === "skills") title = "WEB DEVELOPMENT SKILLS";
+  else if (firstPath === "skills") title = "DEVELOPMENT SKILLS";
   else if (firstPath === "projects") title = "MY PROJECTS";
   return (
     <div
-      className="mt-[90px] flex w-[90px] border-r-[1px] dark:bg-slate-800
+      className="mt-[70px] flex w-[70px] border-r-[1px] bg-white
     h-screen fixed flex-col justify-around items-center"
     >
       <div className="h-[30%]">
@@ -19,7 +19,7 @@ function SideBar() {
       <div className="flex flex-col gap-7 mb-10">
         <a
           target="_blank"
-          href="https://github.com/Mikebezeau"
+          href="https://github.com/Mikebezeau/vite-portfolio/tree/master"
           className="text-black text-[40px]"
         >
           <IoLogoGithub className="cursor-pointer hover:scale-150 hover:text-blue-500 transition-all ease-in-out" />

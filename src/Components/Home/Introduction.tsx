@@ -7,7 +7,7 @@ function Introduction() {
       <div className="w-[5px] h-[5px] bg-blue-600 rounded-full"></div>
       <h2
         className="mt-5 text-black font-medium text-[13px]
-        tracking-widest"
+        tracking-widest w-full text-center"
       >
         HELLO! MY NAME IS
       </h2>

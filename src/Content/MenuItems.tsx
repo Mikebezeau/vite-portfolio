@@ -14,8 +14,9 @@ export default [
     name: "PROJECTS",
     link: "/projects",
   },
-  /*{
-      id: 4,
-      name: "CONTACT",
-    },*/
+  {
+    id: 4,
+    name: "CV",
+    link: "/cv",
+  },
 ];

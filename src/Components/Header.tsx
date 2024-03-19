@@ -1,6 +1,6 @@
 //import { useState } from "react";
 import { Link } from "react-router-dom";
-//import { isBrowser } from "react-device-detect";
+import { isBrowser } from "react-device-detect";
 import logo from "/logo.png";
 //import MobileMenu from "./MobileMenu";
 import menu from "../Content/MenuItems";
@@ -81,8 +81,7 @@ function Header() {
           ))}
         </div>
         {/*})}*/}
-        {/*isBrowser ? <MailTo /> : <MobileHamburger />*/}
-        <MailTo />
+        {isBrowser ? <MailTo /> : <></>}
       </div>
       {/*showMobileMenu && <MobileMenu toggleMenu={toggleMenu} />*/}
     </div>

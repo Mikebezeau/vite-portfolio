@@ -11,6 +11,7 @@ import rpgmapgen from "../assets/projects/rpg2/mapgen.jpg";
 import rpgportal from "../assets/projects/rpg2/portal.jpg";
 import rpggame from "../assets/projects/rpg2/game.jpg";
 import rpglogin from "../assets/projects/rpg2/login.jpg";
+import logo from "/logo.png";
 //rpg
 import rpgbackpack from "../assets/projects/rpg/backpack.jpg";
 import rpgcharpopup from "../assets/projects/rpg/charpopup.jpg";
@@ -44,26 +45,55 @@ import concert from "../assets/projects/concert/concert.png";
 import focus from "../assets/projects/focus/focus.jpg";
 //strong
 import strong from "../assets/projects/strong/strong.jpg";
+//parking
+import park from "../assets/projects/park/park.jpg";
 
 const personalProjects = [
+  {
+    id: "portfolio",
+    url: "",
+    urlGithub: "https://github.com/Mikebezeau/vite-portfolio/tree/master",
+    images: [{ src: logo }],
+    title: "Portfolio",
+    assoc: "",
+    description: "Some neat little thigs about this website.",
+    details: [
+      {
+        heading: "React",
+        content:
+          "Frontend development using React, ensuring a responsive user interface",
+      },
+      {
+        heading: "Vite Build Tool",
+        content:
+          "Vite is an ideal choice for developers who prioritize speed and are eager to leverage modern browser features. It's particularly well-suited for small to medium-sized projects, prototypes, and applications that require quick feedback during development.",
+      },
+      {
+        heading: "React-router, 'useBlocker'",
+        content:
+          "The 'useBlocker' hook allows you to prevent the user from navigating away from the current location. It must be used used with one if the new routers, in this case 'createBrowserRouter'. This was used in concert with the lightbox image gallery, so that if the lightbox is open, the back button will close the galery instead of going back a page. Very useful on mobile devices.",
+      },
+      {
+        heading: "Transparent Background Image",
+        content:
+          "Using the 'linear-gradient' CSS rule with an RGBA colour. Setting the alpha parameter creates the transpartent effect on the image.",
+      },
+    ],
+  },
   {
     id: "vr",
     url: "https://blackbirdtech.ca/",
     urlGithub: "https://github.com/Mikebezeau/vr-arcade",
     images: [{ src: vrtitle }],
     title: "VR Arcade Mockup",
+    assoc: "",
     description:
       "Built with React and Tailwind CSS, this website boasts responsive design and slick animations that elevate your browsing experience to new heights. Immerse yourself in stunning visuals enhanced by image parallax scroll.",
     details: [
       {
-        heading: "Frontend with React JS and Vite",
+        heading: "Frontend with React",
         content:
-          "Frontend development using React JS, ensuring a responsive user interface. ",
-      },
-      {
-        heading: "Vite Build Tool",
-        content:
-          "Vite is an ideal choice for developers who prioritize speed and are eager to leverage modern browser features. It's particularly well-suited for small to medium-sized projects, prototypes, and applications that require quick feedback during development.",
+          "Frontend development using React, ensuring a responsive user interface. ",
       },
       {
         heading: "Booking System",
@@ -94,13 +124,14 @@ const personalProjects = [
       { src: rpgmapgen },
     ],
     title: "Mutiplayer Dungeons and Dragons",
+    assoc: "",
     description:
       "Employing a diverse range of technologies to test develop a multiplayer RPG experience, and procedural world generation using various techniques. My work includes frontend development, real-time multiplayer functionality, database management, and more.",
     details: [
       {
-        heading: "Frontend with React JS",
+        heading: "Frontend with React",
         content:
-          "Frontend development using React JS, ensuring a responsive user interface.",
+          "Frontend development using React, ensuring a responsive user interface.",
       },
       {
         heading: "Responsive Design",
@@ -162,6 +193,7 @@ const personalProjects = [
       { src: rpgmapedit },
     ],
     title: "Online Roleplaying Game",
+    assoc: "",
     description:
       "An immersive online Dungeons and Dragons (D&D) experience where players can embark on adventures, interact with a dynamic world, and engage in epic battles with monsters. Overall, the project aims to deliver an immersive and customizable online D&D experience, combining rich interactivity, dynamic gameplay mechanics, and powerful editing tools to create an engaging and memorable gaming experience for players.",
     details: [
@@ -249,13 +281,14 @@ const personalProjects = [
       { src: spaceroad },
     ],
     title: "React 3D Space Game",
+    assoc: "",
     description:
-      "Welcome to a journey into the depths of space! This experimental project was created in React using Three.js and Three-Fiber. Use the mouse to control the space ship, the up and down arrow keys to speed up and slow down. Right click opens and closes the main menu, where you can inspect the 'Galaxy Star Map', move the map with your mouse and click to target star systems to visit. During flight, warp to a targeted planet with a left click. Toggle the 'Testing' switch on the left to check out the 'Equipment' editor, and the 'Planet Walk' option to view a sample planet surface.",
+      "Welcome to a journey into the depths of space! This experimental project was created in React using Three.js. Use the mouse to control the space ship, the up and down arrow keys to speed up and slow down. Right click opens and closes the main menu, where you can inspect the 'Galaxy Star Map', move the map with your mouse and click to target star systems to visit. During flight, warp to a targeted planet with a left click. Toggle the 'Testing' switch on the left to check out the 'Equipment' editor, and the 'Planet Walk' option to view a sample planet surface.",
     details: [
       {
-        heading: "Frontend with React JS",
+        heading: "Frontend with React",
         content:
-          "Frontend development using React JS, ensuring a responsive user interface.",
+          "Frontend development using React, ensuring a responsive user interface.",
       },
       {
         heading: "Responsive Design",
@@ -283,27 +316,12 @@ const personalProjects = [
 
 const professionalProjects = [
   {
-    id: "strong",
-    url: "https://stronglinknetworking.ca/",
-    urlGithub: "",
-    images: [{ src: strong }],
-    title: "Strong Link Networking",
-    description:
-      "Local business networking, learning, and growth opportunities. The platform is dedicated to fostering meaningful connections and providing valuable resources to empower entrepreneurs and professionals in our community. Whether you're seeking new business partnerships, industry insights, or personal development opportunities, StrongLink is here to support your journey to success.",
-    details: [
-      {
-        heading: "Wordpress",
-        content:
-          "Built on WordPress, our website offers a user-friendly experience designed with the group moderator in mind. With intuitive navigation and straightforward functionalities, managing your network and facilitating engagement has never been easier.",
-      },
-    ],
-  },
-  {
     id: "focus",
     url: "",
     urlGithub: "",
     images: [{ src: focus }],
-    title: "Focus21: PDF Report Generator",
+    title: "PDF Report Generator",
+    assoc: "Focus21",
     description:
       "Our agile development team worked on a challenging full stack web development contract, ensuring timely deliverables and achieving 'raving fan' client satisfaction. Tailored for large-scale manufacturing companies seeking efficient and customizable reporting capabilities. Designed with the needs of manufacturing professionals in mind, this application empowers users to effortlessly create personalized PDF reports. With an intuitive drag-and-drop interface, crafting reports becomes a breeze. Users can seamlessly incorporate images, headings, text, and graphs, in all mannor of styles, all with the simple click of a mouse. With these comprehensive customization options, our PDF report generator empowers users to create visually compelling and informative graphs that effectively communicate their data-driven insights.",
     details: [
@@ -340,11 +358,54 @@ const professionalProjects = [
     ],
   },
   {
+    id: "parkpass",
+    url: "",
+    urlGithub: "",
+    images: [{ src: park }],
+    title: "ParkPass Pro",
+    assoc: "Black Bird Technology",
+    description:
+      "ParkPass Pro is a comprehensive parking management software designed to streamline parking pass and visitor parking allowances for office buildings. Overall, ParkPass Pro offers a user-friendly interface and powerful features to efficiently manage parking passes and visitor parking allowances, ensuring smooth operations and optimal utilization of parking facilities in office buildings.",
+    details: [
+      {
+        heading: "Querying Options",
+        content:
+          "Users can search for parking passes and visitor information using various criteria such as license plate, driver name, employee number, parking pass number, location, notes, infractions, and warnings.",
+      },
+      {
+        heading: "Sortable and Editable Parking Pass List",
+        content:
+          "The software provides a sortable and editable parking pass list categorized by tenant and location. Users have full CRUD (Create, Read, Update, Delete) functions to manage parking pass data efficiently.",
+      },
+      {
+        heading: "Reporting and Statistics",
+        content:
+          "ParkPass Pro generates month-end or 30-day reports displaying statistics on tickets issued and visitor frequency, providing valuable insights into parking lot usage.",
+      },
+      {
+        heading: "Automated Whitelist Checking",
+        content:
+          "The software automatically checks license plates against whitelist databases to verify parking permissions. It can cross-check vehicle presence within the parking lot, identify frequent visitors, and reference special instructions for certain vehicles.",
+      },
+      {
+        heading: "Parking Pass Validation",
+        content:
+          "Parking lot monitors can use their mobile devices to access a real-time parking pass list, checking validity and viewing relevant notes for all parking passes at a specific location.",
+      },
+      {
+        heading: "Export Functionality",
+        content:
+          "Parking pass data can be easily exported to spreadsheets for sharing and further analysis, enhancing collaboration and communication among stakeholders.",
+      },
+    ],
+  },
+  {
     id: "ninja",
     url: "",
     urlGithub: "",
     images: [{ src: ninja }, { src: concert }],
     title: "ConcertNinja",
+    assoc: "",
     description:
       "The ultimate ticket sales platform combined with a robust admin backend, designed to streamline concert experiences for both users and promoters alike.",
     details: [
@@ -356,7 +417,7 @@ const professionalProjects = [
       {
         heading: "Music Promoter Admin Portal",
         content:
-          "ConcertNinja extends its reach into the realm of music promotion with a cutting-edge website built on Laravel 4. Leveraging the Facebook API, users can log in using their Facebook credentials, unlocking access to a wealth of social data including friends and likes. Promoters are empowered with specialized tools, accessible through a dedicated login page, to effectively manage their Facebook pages and maximize outreach.",
+          "Website built on Laravel 4. Leveraging the Facebook API, users can log in using their Facebook credentials, unlocking access to a wealth of social data including friends and likes. Promoters are empowered with specialized tools, accessible through a dedicated login page, to effectively manage their Facebook pages and maximize outreach.",
       },
       {
         heading: "UI/UX",
@@ -371,8 +432,9 @@ const professionalProjects = [
     urlGithub: "",
     images: [{ src: ModuleBlocks }],
     title: "ModuleBlocks",
+    assoc: "Aholattafun Creative Solutions",
     description:
-      "An automated development system designed and implemented by our team, based on the beta version I developed to assist with our development process. Developed using a combination of JavaScript and PHP, ModuleBlocks revolutionizes the creation of website structures for our projects. I'm pleased to say that our company was able to secure IRAP funding (The National Research Council of Canada, Industrial Research Assistance Program) to continue work on our ModuleBlocks system.",
+      "A system I designed and developed to assist with our development process. Using a combination of JavaScript and PHP, ModuleBlocks revolutionized the creation of our websites. I'm pleased to say that our company was able to secure IRAP funding (The National Research Council of Canada, Industrial Research Assistance Program) to continue work on our ModuleBlocks system, paving the way for even more efficient and innovative development processes.",
     details: [
       {
         heading: "Quick and Easy Database Setup",
@@ -392,18 +454,41 @@ const professionalProjects = [
       {
         heading: "Automated Development",
         content:
-          "By automating much of the heavy lifting involved in launching new projects, ModuleBlocks accelerates development timelines and boosts productivity. We are thrilled to announce that our company has secured IRAP funding to further enhance and expand the capabilities of the ModuleBlocks system, paving the way for even more efficient and innovative development processes.",
+          "By automating much of the heavy lifting involved in launching new projects, ModuleBlocks accelerates development timelines and boosts productivity.",
+      },
+    ],
+  },
+  {
+    id: "coop",
+    url: "",
+    urlGithub: "",
+    images: [{ src: coop }],
+    title: "The Co-operators: Your Store",
+    assoc: "Aholattafun Creative Solutions",
+    description:
+      "The Co‑operators is a leading insurance and financial services organization. 'Your Store' integrates all marketing and advertising an agent needs, from multiple departments and multiple portals into a single online platform. Multiple vendor products and services are streamlined into a single shopping cart system. A more advanced version of our similar project, the Rockwell Automation: Competitive Edge marketplace. This project was the first to fully utilize the 'ModuleBlocks' development system (also listed in the projects section). Our innovative system seamlessly integrates three distinct stores under one roof, catering to users from The Co-operators, HB, and Cumis with specialized branding tailored to their respective companies. As a key member of our development team, my primary responsibilities included meticulously crafting the system's architecture through pre-production documentation, bringing dynamic elements to life with jQuery animations, and ensuring a visually stunning experience. Additionally, we contributed to the seamless interaction between front-end display pages and MySQL data retrieval, ensuring smooth navigation and optimal performance for our users. Explore our platform to discover a seamless, secure, and tailored e-commerce experience designed exclusively for employees of The Co-operators, HB, and Cumis.",
+    details: [
+      {
+        heading: "Sucurity and User Privileges",
+        content:
+          "At the heart of our platform is a robust security framework, using encription and session tokens, ensuring that users can access webpages and elements based on their functional privileges, enhancing both convenience and confidentiality.",
+      },
+      {
+        heading: "Admin Portal",
+        content:
+          "This project also made use of our admin portal. Designed to streamline every aspect of managing the online store. With intuitive tools, the user can enter product details like descriptions, sizes, colors, and images. This platform accommodates a wide range of product variations. Additionally, staff performance is tracked with comprehensive reports and rankings, to optimize team productivity and reward top achievers effectively.",
       },
     ],
   },
   {
     id: "rockwell",
-    url: "",
+    url: "Aholattafun Creative Solutions",
     urlGithub: "",
     images: [{ src: rockwell }],
     title: "Rockwell Automation: Competitive Edge",
+    assoc: "",
     description:
-      "An internal marketplace and ranking system for sales staff within the national Rockwell ecosystem. access a diverse array of branded merchandise and essential sales tools. Developed with a keen focus on efficiency, security, and user experience, Rockwell Marketplace revolutionizes the way staff members procure resources to excel in their sales endeavors. Developed with the team from Aholattafun Creative Solutions, I provided the core architecture and security model for the website, as well as directed the team onwards to delivering one of our most successful products to date. This project was extended to include a fully reusable HTML5/jQuery animated checkers lottery game.",
+      "An internal marketplace and ranking system for sales staff within the national Rockwell ecosystem. access a diverse array of branded merchandise and essential sales tools. Developed with a keen focus on efficiency, security, and user experience, Rockwell Marketplace revolutionizes the way staff members procure resources to excel in their sales endeavors. This project was extended to include a fully reusable HTML5/jQuery animated checkers lottery game, which I was the lead programmer for.",
     details: [
       {
         heading: "Point-based Online Market",
@@ -423,23 +508,19 @@ const professionalProjects = [
     ],
   },
   {
-    id: "coop",
-    url: "",
+    id: "strong",
+    url: "https://stronglinknetworking.ca/",
     urlGithub: "",
-    images: [{ src: coop }],
-    title: "The Co-operators: Your Store",
+    images: [{ src: strong }],
+    title: "Strong Link Networking",
+    assoc: "Nautilus Consulting",
     description:
-      "The Co‑operators is a leading insurance and financial services organization. 'Your Store' integrates all marketing and advertising an agent needs, from multiple departments and multiple portals into a single online platform. Multiple vendor products and services are streamlined into a single shopping cart system. A more advanced version of our similar project, the Rockwell Automation: Competitive Edge marketplace. This project was the first to fully utilize the 'ModuleBlocks' development system (also listed in the projects section). Our innovative system seamlessly integrates three distinct stores under one roof, catering to users from The Co-operators, HB, and Cumis with specialized branding tailored to their respective companies. As a key member of our development team, my primary responsibilities included meticulously crafting the system's architecture through pre-production documentation, bringing dynamic elements to life with jQuery animations, and ensuring a visually stunning experience. Additionally, we contributed to the seamless interaction between front-end display pages and MySQL data retrieval, ensuring smooth navigation and optimal performance for our users. Explore our platform to discover a seamless, secure, and tailored e-commerce experience designed exclusively for employees of The Co-operators, HB, and Cumis.",
+      "Local business networking, learning, and growth opportunities. The platform is dedicated to fostering meaningful connections and providing valuable resources to empower entrepreneurs and professionals in our community. Whether you're seeking new business partnerships, industry insights, or personal development opportunities, StrongLink is here to support your journey to success.",
     details: [
       {
-        heading: "Sucurity and User Privileges",
+        heading: "Wordpress",
         content:
-          "At the heart of our platform is a robust security framework, using encription and session tokens, ensuring that users can access webpages and elements based on their functional privileges, enhancing both convenience and confidentiality.",
-      },
-      {
-        heading: "Admin Portal",
-        content:
-          "This project also made use of our admin portal. Designed to streamline every aspect of managing the online store. With intuitive tools, the user can enter product details like descriptions, sizes, colors, and images. This platform accommodates a wide range of product variations. Additionally, staff performance is tracked with comprehensive reports and rankings, to optimize team productivity and reward top achievers effectively.",
+          "Built on WordPress, this website offers a user-friendly experience designed with the group moderator in mind. With intuitive navigation and straightforward functionalities, to allow for ease of managing the network and facilitating engagement.",
       },
     ],
   },
