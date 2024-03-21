@@ -139,6 +139,11 @@ const personalProjects = [
           "The games frontend design is responsive, providing an optimal user experience on mobile devices.",
       },
       {
+        heading: "GitHub Copilot & AI Coding",
+        content:
+          "Currently working with GitHub Copilot. Also, in experimentation with AI coding using ChatGPT, I was successful in creating several templates for functions that included the core functionality requirements, thus speeding up development time.",
+      },
+      {
         heading: "Real-time Multiplayer",
         content:
           "Implemented Socket.io and CORS for real-time multiplayer gameplay and chat features.",
@@ -321,7 +326,7 @@ const professionalProjects = [
     urlGithub: "",
     images: [{ src: focus }],
     title: "PDF Report Generator",
-    assoc: "Focus21",
+    assoc: "Focus21, Proprietary Product",
     description:
       "Our agile development team worked on a challenging full stack web development contract, ensuring timely deliverables and achieving 'raving fan' client satisfaction. Tailored for large-scale manufacturing companies seeking efficient and customizable reporting capabilities. Designed with the needs of manufacturing professionals in mind, this application empowers users to effortlessly create personalized PDF reports. With an intuitive drag-and-drop interface, crafting reports becomes a breeze. Users can seamlessly incorporate images, headings, text, and graphs, in all mannor of styles, all with the simple click of a mouse. With these comprehensive customization options, our PDF report generator empowers users to create visually compelling and informative graphs that effectively communicate their data-driven insights.",
     details: [
@@ -363,7 +368,7 @@ const professionalProjects = [
     urlGithub: "",
     images: [{ src: park }],
     title: "ParkPass Pro",
-    assoc: "Black Bird Technology",
+    assoc: "Black Bird Technology, Proprietary Product of Allied REIT",
     description:
       "ParkPass Pro is a comprehensive parking management software designed to streamline parking pass and visitor parking allowances for office buildings. Overall, ParkPass Pro offers a user-friendly interface and powerful features to efficiently manage parking passes and visitor parking allowances, ensuring smooth operations and optimal utilization of parking facilities in office buildings.",
     details: [
@@ -432,7 +437,7 @@ const professionalProjects = [
     urlGithub: "",
     images: [{ src: ModuleBlocks }],
     title: "ModuleBlocks",
-    assoc: "Aholattafun Creative Solutions",
+    assoc: "Aholattafun Creative Solutions, Proprietary Product",
     description:
       "A system I designed and developed to assist with our development process. Using a combination of JavaScript and PHP, ModuleBlocks revolutionized the creation of our websites. I'm pleased to say that our company was able to secure IRAP funding (The National Research Council of Canada, Industrial Research Assistance Program) to continue work on our ModuleBlocks system, paving the way for even more efficient and innovative development processes.",
     details: [
@@ -464,7 +469,7 @@ const professionalProjects = [
     urlGithub: "",
     images: [{ src: coop }],
     title: "The Co-operators: Your Store",
-    assoc: "Aholattafun Creative Solutions",
+    assoc: "Aholattafun Creative Solutions, Proprietary Product",
     description:
       "The Co‑operators is a leading insurance and financial services organization. 'Your Store' integrates all marketing and advertising an agent needs, from multiple departments and multiple portals into a single online platform. Multiple vendor products and services are streamlined into a single shopping cart system. A more advanced version of our similar project, the Rockwell Automation: Competitive Edge marketplace. This project was the first to fully utilize the 'ModuleBlocks' development system (also listed in the projects section). Our innovative system seamlessly integrates three distinct stores under one roof, catering to users from The Co-operators, HB, and Cumis with specialized branding tailored to their respective companies. As a key member of our development team, my primary responsibilities included meticulously crafting the system's architecture through pre-production documentation, bringing dynamic elements to life with jQuery animations, and ensuring a visually stunning experience. Additionally, we contributed to the seamless interaction between front-end display pages and MySQL data retrieval, ensuring smooth navigation and optimal performance for our users. Explore our platform to discover a seamless, secure, and tailored e-commerce experience designed exclusively for employees of The Co-operators, HB, and Cumis.",
     details: [
@@ -482,11 +487,11 @@ const professionalProjects = [
   },
   {
     id: "rockwell",
-    url: "Aholattafun Creative Solutions",
+    url: "",
     urlGithub: "",
     images: [{ src: rockwell }],
     title: "Rockwell Automation: Competitive Edge",
-    assoc: "",
+    assoc: "Aholattafun Creative Solutions, Proprietary Product",
     description:
       "An internal marketplace and ranking system for sales staff within the national Rockwell ecosystem. access a diverse array of branded merchandise and essential sales tools. Developed with a keen focus on efficiency, security, and user experience, Rockwell Marketplace revolutionizes the way staff members procure resources to excel in their sales endeavors. This project was extended to include a fully reusable HTML5/jQuery animated checkers lottery game, which I was the lead programmer for.",
     details: [

@@ -12,7 +12,7 @@ function Introduction() {
         HELLO! MY NAME IS
       </h2>
       <h2
-        className="text-[70px] font-bold text-black tracking-widest
+        className="text-5xl md:text-[70px] font-bold text-black tracking-widest
         mt-5 mb-3 text-center"
       >
         MICHAEL <br></br>BEZEAU

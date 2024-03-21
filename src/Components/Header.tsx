@@ -72,7 +72,7 @@ function Header() {
           {menu.map((item) => (
             <Link key={item.id} to={item.link}>
               <div
-                className="flex items-center justify-center cursor-pointer h-full md:min-w-[120px]
+                className="text-base md:text-xl flex items-center justify-center cursor-pointer h-full md:min-w-[120px]
                 hover:bg-slate-200 transition-colors ease-in-out duration-300 font-medium text-black"
               >
                 {item.name}

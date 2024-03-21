@@ -4,7 +4,9 @@ import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 function About() {
   return (
     <div className="mt-8 text-center flex flex-col items-center">
-      <h2 className="text-[40px] font-bold">{Strings.ABOUT_HEADING}</h2>
+      <h2 className="text-3xl md:text-4xl font-bold">
+        {Strings.ABOUT_HEADING}
+      </h2>
       <BiSolidQuoteAltLeft
         className="bg-blue-500 p-3 text-[44px] rounded-full
         mt-6 text-white"
