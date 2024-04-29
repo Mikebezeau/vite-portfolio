@@ -7,4 +7,5 @@ const APP_URL = "https://portfolio.blackbirdtech.ca/";
 export default defineConfig({
   plugins: [react()],
   base: APP_URL,
+  assetsInclude: ["**/*.gltf", "**/*.glb"],
 });

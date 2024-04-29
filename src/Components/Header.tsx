@@ -5,7 +5,7 @@ import logo from "/logo.png";
 //import MobileMenu from "./MobileMenu";
 import menu from "../Content/MenuItems";
 
-function Header() {
+const Header = () => {
   //const [showMobileMenu, setShowMobileMenu] = useState(false);
   /*
   const toggleMenu = (): void => {
@@ -69,6 +69,14 @@ function Header() {
         </Link>
         {/*isBrowser && (*/}
         <div className="grid grid-flow-col h-[70px] w-full justify-stretch md:justify-center">
+          <Link to={"/presentation"}>
+            <div
+              className="text-base md:text-xl flex items-center justify-center cursor-pointer h-full md:min-w-[120px]
+                hover:bg-slate-200 transition-colors ease-in-out duration-300 font-medium text-black"
+            >
+              3D{isBrowser && <> SHOW</>}
+            </div>
+          </Link>
           {menu.map((item) => (
             <Link key={item.id} to={item.link}>
               <div
@@ -86,6 +94,6 @@ function Header() {
       {/*showMobileMenu && <MobileMenu toggleMenu={toggleMenu} />*/}
     </div>
   );
-}
+};
 
 export default Header;

@@ -3,7 +3,7 @@ import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 
 function About() {
   return (
-    <div className="mt-8 text-center flex flex-col items-center">
+    <div className="relative z-20 mt-8 text-center flex flex-col items-center">
       <h2 className="text-3xl md:text-4xl font-bold">
         {Strings.ABOUT_HEADING}
       </h2>
