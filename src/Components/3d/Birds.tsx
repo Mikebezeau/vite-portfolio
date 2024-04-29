@@ -59,7 +59,7 @@ const PreBirds = () => {
       moveBird();
     } else {
       // hide the birds when not in ocean scene
-      birdGroupRefs.current.forEach((birdMesh, i) => {
+      birdGroupRefs.current.forEach((birdMesh) => {
         if (birdMesh) {
           birdMesh.position.setX(0);
           birdMesh.position.setY(-100);
