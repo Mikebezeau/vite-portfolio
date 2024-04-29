@@ -116,7 +116,6 @@ const Presentation = () => {
 
   const handlePageChange = useCallback(
     (increment: number) => {
-      console.log(pageNumber, sceneRef.current, LAST_SCENE);
       if (!changingPage) {
         const newPageNumber = pageNumber + increment;
         if (newPageNumber >= 0 && newPageNumber <= maxPageNum) {
@@ -232,9 +231,9 @@ const Presentation = () => {
 
   const PresentationEnd = () => {
     return (
-      <div className="absolute z-10 text-6xl text-black left-1/2 top-1/2">
+      <div className="absolute z-10 text-3xl md:text-6xl text-black left-1/2 top-1/2">
         <div className="ml-[-50%] -mt-24">
-          <div>THANKS FOR WATCHING</div>
+          <div className="mb-4">THANKS FOR WATCHING</div>
           <div
             onClick={handleRestartPresentation}
             className="cursor-pointer hover:text-blue-500"
